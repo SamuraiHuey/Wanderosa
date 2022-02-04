@@ -1,6 +1,17 @@
 import React from "react";
 
 const Schedule = () => {
+
+  const [data, setData] = React.useState({
+    morn: "",
+    noon: "",
+    eve: ""
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setData({ ...data, [name]: value });
+  };
   
   return(
   <div>
@@ -20,26 +31,25 @@ const Schedule = () => {
       <button> Sunday </button>
     </div>
 
+    <button onClick={handleChange}> Save Changes!</button>
+
     <div id="morning">
       <h3>Morning</h3>
-      <textarea style={{ width: '80%', height: '120px' }}></textarea>
-      <button> Save!</button>
+      <textarea type="text"name="morn" style={{ width: '80%', height: '120px' }}></textarea>
     </div>
 
 
 
     <div id="noon">
       <h3>Noon</h3>
-      <textarea style={{ width: '80%', height: '120px' }}></textarea>
-      <button> Save!</button>
+      <textarea type="text"name="noon" style={{ width: '80%', height: '120px' }}></textarea>
     </div>
 
 
 
     <div id="evening">
       <h3>Evening</h3>
-      <textarea style={{ width: '80%', height: '120px' }}></textarea>
-      <button> Save!</button>
+      <textarea type="text"name="eve" style={{ width: '80%', height: '120px' }}></textarea>
     </div>
   </div>
   )
