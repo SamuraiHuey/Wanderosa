@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Schedule from './pages/Schedule';
 import Signup from './pages/Signup';
 import Footer from './Footer';
+import Hero from './Hero';
 
 function Switcher() {
   const [currentPage, handlePageChange] = useState('Home');
