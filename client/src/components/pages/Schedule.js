@@ -2,16 +2,16 @@ import React from "react";
 
 const Schedule = () => {
 
-  const [data, setData] = React.useState({
-    morn: "",
-    noon: "",
-    eve: ""
-  });
+  // const [data, setData] = React.useState({
+  //   morn: "",
+  //   noon: "",
+  //   eve: ""
+  // });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setData({ ...data, [name]: value });
-  };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setData({ ...data, [name]: value });
+  // };
   
   return(
   <div>
@@ -31,7 +31,7 @@ const Schedule = () => {
       <button> Sunday </button>
     </div>
 
-    <button onClick={handleChange}> Save Changes!</button>
+    {/* <button onClick={handleChange}> Save Changes!</button> */}
 
     <div id="morning">
       <h3>Morning</h3>
