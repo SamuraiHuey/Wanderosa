@@ -1,11 +1,12 @@
 import React from "react";
+import Hero from '../Hero';
 
 const Home = () => (
     <div>
-        <h1>HOMEPAGE</h1>
-        <p>
-            Theres no place like home.
-        </p>
+        <div>
+            <Hero />
+        </div>
+        Theres no place like home.
     </div>
 
 
