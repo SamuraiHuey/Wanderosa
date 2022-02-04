@@ -1,6 +1,8 @@
 import React from "react";
 
-const Login = () => (
+const Login = () => {
+  
+  return(
   <div>
     <h2>LOGIN</h2>
     <p>
@@ -32,8 +34,8 @@ const Login = () => (
         </div>
       </form>
   </div>
+  )
 
-
-);
+};
 
 export default Login;

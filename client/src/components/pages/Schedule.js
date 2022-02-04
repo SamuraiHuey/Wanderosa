@@ -1,6 +1,8 @@
 import React from "react";
 
-const Schedule = () => (
+const Schedule = () => {
+  
+  return(
   <div>
     <h2>SCHEDULE</h2>
     <p>
@@ -40,8 +42,8 @@ const Schedule = () => (
       <button> Save!</button>
     </div>
   </div>
+  )
 
-
-);
+};
 
 export default Schedule;
