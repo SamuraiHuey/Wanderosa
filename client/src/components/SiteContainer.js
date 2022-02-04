@@ -3,6 +3,7 @@ import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import Schedule from './pages/Schedule';
 import Signup from './pages/Signup';
+import Login from './pages/Login';
 import Footer from './Footer';
 
 function Switcher() {
@@ -16,6 +17,8 @@ function Switcher() {
         return <Schedule />
       case 'Signup':
         return <Signup />
+      case 'Login':
+        return <Login />
       default:
         return <Home />
     }
@@ -25,9 +28,9 @@ function Switcher() {
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <div>
-          {renderPage(currentPage)}
+        {renderPage(currentPage)}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

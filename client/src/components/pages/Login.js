@@ -1,22 +1,13 @@
 import React from "react";
 
-const Signup = () => (
+const Login = () => (
   <div>
-    <h2>SIGNUP</h2>
+    <h2>LOGIN</h2>
     <p>
-      A form here...and a form here...
+      Swipe your club pass
     </p>
 
     <form>
-        <div>
-          <label htmlFor="name"> Name:</label>
-          <input
-            placeholder="Name"
-            name="name"
-            type="name"
-            id="name"
-          />
-        </div>
     
         <div>
           <label htmlFor="email">Email:</label>
@@ -45,4 +36,4 @@ const Signup = () => (
 
 );
 
-export default Signup;
+export default Login;

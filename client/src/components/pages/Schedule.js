@@ -2,7 +2,7 @@ import React from "react";
 
 const Schedule = () => (
   <div>
-    <h1>SCHEDULE</h1>
+    <h2>SCHEDULE</h2>
     <p>
       Theres no place like wherever you're traveling.
     </p>

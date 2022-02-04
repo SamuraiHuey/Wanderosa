@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => (
   <div>
-    <h1>HOMEPAGE</h1>
+    <h2>HOMEPAGE</h2>
     <p>
       Theres no place like home.
     </p>
