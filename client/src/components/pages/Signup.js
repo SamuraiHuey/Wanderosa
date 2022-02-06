@@ -2,6 +2,9 @@ import React from "react";
 
 const Signup = () => {
 
+    const handleFormSubmit = (event) => {
+
+    };
 
     return (
         <div>
@@ -10,7 +13,7 @@ const Signup = () => {
                 A form here...and a form here...
             </p>
 
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <div>
                     <label htmlFor="name"> Name:</label>
                     <input
