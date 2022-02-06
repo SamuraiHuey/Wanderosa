@@ -1,3 +1,13 @@
+:root {
+  --very-peri:#6667AB;
+  --blue:#3263a4 ;
+  --light-blue: rgb(156, 194, 197);
+  --spa-blue: #9ACBD9;
+
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -12,6 +22,18 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.footer {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

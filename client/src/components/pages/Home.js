@@ -1,5 +1,7 @@
 import React from "react";
+import Cards from "../Cards";
 import Hero from '../Hero';
+
 
 const Home = () => {
     return(
@@ -8,6 +10,10 @@ const Home = () => {
             <Hero />
         </div>
         Theres no place like home.
+        <div>
+            <Cards />
+        </div>
+        
     </div>
     )
 
