@@ -1,6 +1,10 @@
 import React from "react";
 
 const Login = () => {
+
+  const handleFormSubmit = (event) => {
+
+  };
   
   return(
   <div>
@@ -9,7 +13,7 @@ const Login = () => {
       Swipe your club pass
     </p>
 
-    <form>
+    <form onSubmit={handleFormSubmit}>
     
         <div>
           <label htmlFor="email">Email:</label>
