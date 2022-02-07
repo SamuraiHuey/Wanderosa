@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Signup = () => {
 
     const [formState, setFormState] = useState({
-        name: '',
+        username: '',
         email: '',
         password: '',
     });
@@ -33,7 +33,7 @@ const Signup = () => {
         //     console.error(e);
         //   }
         // setFormState({
-        //   name: '',
+        //   username: '',
         //   email: '',
         //   password: '',
         // });
@@ -49,12 +49,12 @@ const Signup = () => {
 
             <form onSubmit={handleFormSubmit}>
                 <div>
-                    <label> Name:</label>
+                    <label> Username:</label>
                     <input
                         placeholder="Name"
-                        name="name"
-                        type="name"
-                        id="name"
+                        name="username"
+                        type="username"
+                        id="username"
                         onChange={handleChange}
                     />
                 </div>
