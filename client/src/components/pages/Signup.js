@@ -32,6 +32,11 @@ const Signup = () => {
         //   } catch (e) {
         //     console.error(e);
         //   }
+        // setFormState({
+        //   name: '',
+        //   email: '',
+        //   password: '',
+        // });
         console.log("signin clicked");
     };
 
@@ -44,31 +49,34 @@ const Signup = () => {
 
             <form onSubmit={handleFormSubmit}>
                 <div>
-                    <label htmlFor="name"> Name:</label>
+                    <label> Name:</label>
                     <input
                         placeholder="Name"
                         name="name"
                         type="name"
                         id="name"
+                        onChange={handleChange}
                     />
                 </div>
 
                 <div>
-                    <label htmlFor="email">Email:</label>
+                    <label>Email:</label>
                     <input
                         placeholder="youremail@test.com"
                         name="email"
                         type="email"
                         id="email"
+                        onChange={handleChange}
                     />
                 </div>
                 <div>
-                    <label htmlFor="pwd">Password:</label>
+                    <label>Password:</label>
                     <input
                         placeholder="******"
                         name="password"
                         type="password"
                         id="pwd"
+                        onChange={handleChange}
                     />
                 </div>
                 <div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Schedule = () => {
-  const [schedule, setSchedule] = useState({
+  const [formState, setFormState] = useState({
     day: '',
     place: '',
     morn: '',
@@ -13,8 +13,8 @@ const Schedule = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    setSchedule({
-      ...schedule,
+    setFormState({
+      ...formState,
       [name]: value,
     });
   };
@@ -27,7 +27,14 @@ const Schedule = () => {
     //     variables: { ...formState },
     //   });
     // }
-    console.log('sick')
+    // setFormState({
+    //   day: '',
+    //   place: '',
+    //   morn: '',
+    //   noon: '',
+    //   eve: '',
+    // });
+    console.log('save day clicked')
   };
 
 
