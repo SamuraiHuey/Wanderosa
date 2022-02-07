@@ -18,7 +18,13 @@ const userSchema = new Schema({
         type: String,
         required: true,
         minLength: 5
-    }
+    },
+    itenerary: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: 'Itenerary'
+        }
+      ]
     // this needs to be built out more I think
 })
 
