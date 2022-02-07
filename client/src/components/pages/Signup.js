@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const Signup = () => {
 
-    const handleFormSubmit = (event) => {
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        password: '',
+    });
 
+    // update state based on form input changes
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
+    };
+
+
+
+    // submit form
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        // try {
+        //     const { data } = await addUser({
+        //       variables: { ...formState },
+        //     });
+
+        //     Auth.login(data.addUser.token);
+        //   } catch (e) {
+        //     console.error(e);
+        //   }
+        console.log("signin clicked");
     };
 
     return (
