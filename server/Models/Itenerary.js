@@ -8,6 +8,10 @@ const itenerarySchema = new Schema(
             type: String,
             required: true,
         },
+        location: {
+            type: String,
+            required: true
+        },
         morn: {
             type: String,
             minlength: 1,
