@@ -1,7 +1,5 @@
 const { Schema } = require("mongoose")
 
-const
-
 const itenerarySchema = new Schema(
     {
         day: {
