@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Schedule from './pages/Schedule';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import View from './pages/View';
 import Footer from './Footer';
 import Contact from '../components/pages/Contact'
 
@@ -21,8 +22,10 @@ function Switcher() {
         return <Signup />
       case 'Login':
         return <Login />
-        case 'Contact':
-          return <Contact />
+      case 'Contact':
+        return <Contact />
+      case 'View':
+        return <View />
       default:
         return <Home />
     }

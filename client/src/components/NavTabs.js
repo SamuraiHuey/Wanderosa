@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function NavTabs(props) {
-    const tabs = ['Home', 'Schedule', 'Signup', 'Login', 'Contact'];
+    const tabs = ['Home', 'Schedule', 'View', 'Signup', 'Login', 'Contact'];
     return (
         <div>
             <h1>Wanderosa!</h1>
