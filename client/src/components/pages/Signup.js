@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-// import { useMutation } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 // import Auth from '../utils/auth';
-// import { ADD_USER } from '../../utils/mutations';
+import { ADD_USER } from '../../utils/mutations';
+
 
 const Signup = () => {
 
@@ -52,11 +53,7 @@ const Signup = () => {
 
             <form onSubmit={handleFormSubmit}>
                 <div>
-<<<<<<< HEAD
-                    <label> Username:</label>
-=======
                     <label> Userame:</label>
->>>>>>> experiment/backend
                     <input
                         placeholder="Name"
                         name="username"
