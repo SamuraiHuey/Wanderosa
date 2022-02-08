@@ -12,10 +12,9 @@ const typeDefs = gql`
     _id: ID
     date: String
     location: String
-    mornText: String
-    noonText: String
-    eveText: String
-    createdAt: String
+    morn: String
+    noon: String
+    eve: String
     username: String
   }
 
