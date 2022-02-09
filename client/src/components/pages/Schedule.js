@@ -5,14 +5,13 @@ import Steps from "../Steps";
 import { QUERY_ITINERARY, QUERY_ME } from '../../utils/queries';
 
 const Schedule = () => {
-  const [formState, setText] = useState({
+  const [formState, setFormState] = useState({
     day: '',
     location: '',
     morn: '',
     noon: '',
     eve: '',
 });
-  const [characterCount, setCharacterCount] = useState(0);
 
 
   const [addDay, { error }] = useMutation(ADD_DAY, {
@@ -39,11 +38,13 @@ const Schedule = () => {
   });
 
   // update state based on form input changes
-  const handleChange = (event) => {
-    if (event.target.value.length <= 280) {
-      setText(event.target.value);
-      setCharacterCount(event.target.value.length);
-    }
+    const handleChange = (event) => {
+      const { name, value } = event.target;
+
+      setFormState({
+          ...formState,
+          [name]: value,
+      });
   };
 
 // submit form
@@ -55,9 +56,6 @@ const handleFormSubmit = async (event) => {
       variables: { ...formState },
     });
 
-    // clear form value
-    setText('');
-    setCharacterCount(0);
   } catch (e) {
     console.error(e);
   }
