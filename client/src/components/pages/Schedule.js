@@ -65,7 +65,7 @@ const handleFormSubmit = async (event) => {
   return (
     <div>
       <h2>CREATE YOUR ITINERARY</h2>
-      <p> <Steps /> </p>
+      <div> <Steps /> </div>
       <p>
         Theres no place like wherever you're traveling.
       </p>

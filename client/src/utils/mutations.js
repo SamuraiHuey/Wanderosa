@@ -26,9 +26,8 @@ mutation login($email: String!, $password: String!) {
 
 
 export const ADD_DAY = gql`
-mutation addDay($day: String!, $location: String!, $morn: String, $noon: String, $eve: String) {
+mutation addDay($day: String, $location: String!, $morn: String, $noon: String, $eve: String) {
   addDay(day: $day, location: $location, morn: $morn, noon: $noon, eve: $eve) {
-    token
     itinerary {
       _id
       day
