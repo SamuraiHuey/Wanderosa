@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Itenerary } = require('../models');
+const { User, Itinerary } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -9,8 +9,8 @@ const resolvers = {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
-          .populate('thoughts')
-          .populate('friends');
+          .populate('itinerary');
+        
 
         return userData;
       }
@@ -28,6 +28,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select('-__v -password')
+
     },
   },
 
@@ -39,17 +40,34 @@ const resolvers = {
       return { token, user };
     },
 
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError('Incorrect credentials');
+      }
+
+      const token = signToken(user);
+      return { token, user };
+    },
+
     addDay: async (parent, args, context) => {
       if (context.user) {
-        const itenerary = await Itenerary.create({ ...args, username: context.user.username });
+        const itinerary = await Itinerary.create({ ...args, username: context.user.username });
 
         await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { inteneraries: itenerary._id } },
+          { $push: { itinerary: itinerary._id } },
           { new: true }
         );
 
-        return itenerary;
+        return itinerary;
       }
 
       throw new AuthenticationError('You need to be logged in!');

@@ -17,10 +17,10 @@ const userSchema = new Schema({
         required: true,
         minLength: 5
     },
-    itenerary: [
+    itinerary: [
         {
           type: Schema.Types.ObjectId,
-          ref: 'Itenerary'
+          ref: 'Itinerary'
         }
       ]
     // this needs to be built out more I think

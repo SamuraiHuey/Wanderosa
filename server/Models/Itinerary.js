@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose")
 
-const itenerarySchema = new Schema(
+const itinerarySchema = new Schema(
     {
         day: {
             type: String,
@@ -32,10 +32,10 @@ const itenerarySchema = new Schema(
     }
 )
 
-const Itenerary = model('Itenerary', itenerarySchema);
-module.exports = Itenerary;
+const Itinerary = model('Itinerary', itinerarySchema);
+module.exports = Itinerary;
 
-// itenerary
+// itinerary
 // - location
 // - date
 // - username

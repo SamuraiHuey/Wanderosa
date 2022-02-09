@@ -1,4 +1,4 @@
 const User = require('./User');
-const Itenerary = require('./Itenerary');
+const Itinerary = require('./Itinerary');
 
-module.exports = { User, Itenerary };
+module.exports = { User, Itinerary };

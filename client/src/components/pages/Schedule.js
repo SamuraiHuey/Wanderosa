@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ADD_DAY } from '../../utils/mutations'
+import { useMutation } from '@apollo/client';
 
 const Schedule = () => {
   const [formState, setFormState] = useState({
@@ -8,6 +10,9 @@ const Schedule = () => {
     noon: '',
     eve: '',
   });
+
+  
+  const [addDay, { error }] = useMutation(ADD_DAY);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -22,18 +27,21 @@ const Schedule = () => {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    // try {
-    //   const { data } = await addDay({
-    //     variables: { ...formState },
-    //   });
-    // }
-    // setFormState({
-    //   day: '',
-    //   place: '',
-    //   morn: '',
-    //   noon: '',
-    //   eve: '',
-    // });
+    try {
+      const { data } = await addDay({
+        variables: { ...formState },
+      });
+    }
+    catch (e) {
+      console.error(e);
+    }
+    setFormState({
+      day: '',
+      place: '',
+      morn: '',
+      noon: '',
+      eve: '',
+    });
     console.log('save day clicked')
   };
 

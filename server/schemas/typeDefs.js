@@ -5,12 +5,12 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    itenerary: [Itenerary]
+    itinerary: [Itinerary]
   }
 
-  type Itenerary {
+  type Itinerary {
     _id: ID
-    date: String
+    day: String
     location: String
     morn: String
     noon: String
@@ -28,14 +28,16 @@ const typeDefs = gql`
     me: User
     users: [User]
     user(username: String!): User
-    itenerary(username: String): [Itenerary]
+    itinerary(username: String): [Itinerary]
   }
 
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
+    addDay(day: String!, location: String!, morn: String, noon: String, eve: String): Itinerary
   }
 `;
 
 module.exports = typeDefs;
+
