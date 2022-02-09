@@ -16,9 +16,9 @@ Wanderosa is a great app on its own, but we still have plenty of ideas for the f
 - an "Explore" function that will allow you to see what others do in the place you are visiting
 
 ### The Team
-William Brent - https://github.com/SamuraiHuey
-Zachary McCollum - https://github.com/ZBreezie
-Elizabeth Odell - https://github.com/elizabethodell
+- William Brent - https://github.com/SamuraiHuey
+- Zachary McCollum - https://github.com/ZBreezie
+- Elizabeth Odell - https://github.com/elizabethodell
 
 Live Link: https://wanderosa.herokuapp.com
 
