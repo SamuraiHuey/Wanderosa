@@ -35,7 +35,7 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addDay(day: String!, location: String!, morn: String, noon: String, eve: String): Itinerary
+    addDay(day: String, location: String!, morn: String, noon: String, eve: String): Itinerary
   }
 `;
 

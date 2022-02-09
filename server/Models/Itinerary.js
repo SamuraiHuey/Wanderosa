@@ -29,6 +29,11 @@ const itinerarySchema = new Schema(
             type: String,
             required: true
         }
+    },
+    {
+        toJSON: {
+            getters: true
+        }
     }
 )
 
