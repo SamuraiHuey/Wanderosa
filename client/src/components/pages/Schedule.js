@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ADD_DAY } from '../../utils/mutations'
 import { useMutation } from '@apollo/client';
+import Steps from "../Steps";
 
 const Schedule = () => {
   const [formState, setFormState] = useState({
@@ -48,7 +49,8 @@ const Schedule = () => {
 
   return (
     <div>
-      <h2>SCHEDULE</h2>
+      <h2>CREATE YOUR ITINERARY</h2>
+      <p> <Steps /> </p>
       <p>
         Theres no place like wherever you're traveling.
       </p>
