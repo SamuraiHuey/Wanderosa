@@ -15,28 +15,28 @@ const Schedule = () => {
 
 
   const [addDay, { error }] = useMutation(ADD_DAY
-    , {
-    update(cache, { data: { addDay } }) {
-      try {
-        // update itenerary array's cache
-        // could potentially not exist yet, so wrap in a try/catch
-        const { itinerary } = cache.readQuery({ query: QUERY_ITINERARY });
-        cache.writeQuery({
-          query: QUERY_ITINERARY,
-          data: { itinerary: [addDay, ...itinerary] },
-        });
-      } catch (e) {
-        console.error(e);
-      }
+  //   , {
+  //   update(cache, { data: { addDay } }) {
+  //     try {
+  //       // update itenerary array's cache
+  //       // could potentially not exist yet, so wrap in a try/catch
+  //       const { itinerary } = cache.readQuery({ query: QUERY_ITINERARY });
+  //       cache.writeQuery({
+  //         query: QUERY_ITINERARY,
+  //         data: { itinerary: [addDay, ...itinerary] },
+  //       });
+  //     } catch (e) {
+  //       console.error(e);
+  //     }
 
-      // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, itinerary: [...me.itinerary, addDay] } },
-      });
-    },
-  }
+  //     // update me object's cache
+  //     const { me } = cache.readQuery({ query: QUERY_ME });
+  //     cache.writeQuery({
+  //       query: QUERY_ME,
+  //       data: { me: { ...me, itinerary: [...me.itinerary, addDay] } },
+  //     });
+  //   },
+  // }
   );
 
   // update state based on form input changes
