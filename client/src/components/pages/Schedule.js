@@ -84,21 +84,21 @@ const handleFormSubmit = async (event) => {
 
         <div id="morning">
           <h3>Morning</h3>
-          <textarea onChange={handleChange}  type="text" placeholder="Your morning plans" name="morn" style={{ width: '80%', height: '120px' }}></textarea>
+          <input onChange={handleChange}  type="text" placeholder="Your morning plans" name="morn" style={{ width: '80%', height: '120px' }}></input>
         </div>
 
 
 
         <div id="noon">
           <h3>Noon</h3>
-          <textarea onChange={handleChange}  type="text" placeholder="Your mid-day plans" name="noon" style={{ width: '80%', height: '120px' }}></textarea>
+          <input onChange={handleChange}  type="text" placeholder="Your mid-day plans" name="noon" style={{ width: '80%', height: '120px' }}></input>
         </div>
 
 
 
         <div id="evening">
           <h3>Evening</h3>
-          <textarea onChange={handleChange}  type="text" placeholder="Your evening plans" name="eve" style={{ width: '80%', height: '120px' }}></textarea>
+          <input onChange={handleChange}  type="text" placeholder="Your evening plans" name="eve" style={{ width: '80%', height: '120px' }}></input>
         </div>
         <div className="saveDay">
           <button type="submit"> Save Day! </button>
