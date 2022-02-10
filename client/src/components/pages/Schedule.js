@@ -76,7 +76,7 @@ const handleFormSubmit = async (event) => {
         <div id="date">
           <h4>Enter a date, where you're going, write out your plans, and save!</h4>
 
-          <input   onChange={handleChange} type="text" placeholder="Your day" name="day"></input>
+          <input   onChange={handleChange} type="date" placeholder="Your day" name="day"></input>
 
           <input onChange={handleChange}  type="text" placeholder="Your destination" name="location"></input>
 
