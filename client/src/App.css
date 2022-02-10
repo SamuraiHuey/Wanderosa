@@ -63,6 +63,11 @@
 .header-links {
   color: white;
   text-decoration: none;
+  padding: 0px 10px
+}
+
+.header-links :hover {
+  color: var(--spa-blue);
 }
 
 .align-center {

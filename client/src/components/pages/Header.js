@@ -17,11 +17,11 @@ const Header = () => {
           <h1>Wanderosa</h1>
         </Link>
 
-        <nav className="text-center">
+        <nav className="text-center header-links">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/schedule">Schedule</Link>
-              <Link to="/view">View</Link>
+              <Link className='header-links' to="/schedule">Schedule</Link>
+              <Link className='header-links' to="/view">View</Link>
               <a className='header-links' href="/" onClick={logout}>
                 Logout
               </a>
