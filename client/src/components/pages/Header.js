@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-secondary mb-4 py-2 flex-row align-center">
+    <header className="secondary-bg mb-4 py-2 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <Link to="/">
-          <h1>Wanderosa</h1>
+          <h1 className='header-links'>Wanderosa</h1>
         </Link>
 
         <nav className="text-center">
@@ -22,14 +22,14 @@ const Header = () => {
             <>
               <Link to="/schedule">Schedule</Link>
               <Link to="/view">View</Link>
-              <a href="/" onClick={logout}>
+              <a className='header-links' href="/" onClick={logout}>
                 Logout
               </a>
             </>
           ) : (
             <>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
+              <Link className='header-links' to="/login">Login</Link>
+              <Link className='header-links' to="/signup">Signup</Link>
             </>
           )}
         </nav>

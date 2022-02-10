@@ -1,6 +1,6 @@
 :root {
   --very-peri:#6667AB;
-  --blue:#3263a4 ;
+  --blue:#3263a4;
   --light-blue: rgb(156, 194, 197);
   --spa-blue: #9ACBD9;
 }
@@ -10,6 +10,7 @@
 .App {
   text-align: center;
 }
+
 
 .hero {
   height: 100vh;
@@ -55,8 +56,13 @@
   margin-bottom: var(--spacing-three);
 }
 
-.bg-secondary {
+.secondary-bg {
   background-color: var(--blue);
+}
+
+.header-links {
+  color: white;
+  text-decoration: none;
 }
 
 .align-center {

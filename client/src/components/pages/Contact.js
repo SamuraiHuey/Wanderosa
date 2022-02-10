@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ContactForm from '../pages/ContactForm';
 import { FaFacebook, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import '../../App.css';
+//import '../../App.css';
 import Plane from '../../assets/images/plane.jpg';
 
 function Contact() {

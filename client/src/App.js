@@ -12,6 +12,9 @@ import Login from './components/pages/Login';
 import Schedule from './components/pages/Schedule';
 import View from './components/pages/View';
 import Signup from './components/pages/Signup';
+import Contact from './components/pages/Contact'
+
+import "./App.css"
 
 
 const httpLink = createHttpLink({
@@ -48,6 +51,7 @@ return (
             <Route exact path="/signup" element={<Signup/>} />
             <Route exact path="/schedule" element={<Schedule/>} />
             <Route exact path="/view" element={<View/>} />
+            <Route exact path="/contact" element={<Contact/>} />
 {/* Need a contact pathing, when I added a route to it, it broke the CSS */}
           </Routes>
         </div>
