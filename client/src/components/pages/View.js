@@ -7,8 +7,11 @@ import { QUERY_ME, QUERY_ITINERARY } from '../../utils/queries';
 
 
 const View = () => {
-    const { loading, data } = useQuery(QUERY_ITINERARY);
-    const itinerary = data?.itinerary || [];
+    // const { loading, data } = useQuery(QUERY_ITINERARY);
+    // const itinerary = data?.itinerary || [];
+    const { loading, data} = useQuery(QUERY_ME)
+    const itinerary = data?.me.itinerary || [];
+    // console.log(itinerary);
     console.log(itinerary);
     return (
         <div>
