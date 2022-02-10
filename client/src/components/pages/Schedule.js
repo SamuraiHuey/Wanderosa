@@ -63,7 +63,6 @@ const handleFormSubmit = async (event) => {
   }
 };
 
-
   return (
     <div>
       <h2>CREATE YOUR ITINERARY</h2>
