@@ -52,11 +52,7 @@ const Signup = () => {
 
             <form onSubmit={handleFormSubmit}>
                 <div>
-<<<<<<< HEAD
                     <label> Username:</label>
-=======
-                    <label> Userame:</label>
->>>>>>> experiment/backend
                     <input
                         placeholder="Name"
                         name="username"
