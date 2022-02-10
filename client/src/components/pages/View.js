@@ -26,7 +26,7 @@ const View = () => {
                                    Date: {itinerary.day} 
                                    Location: {itinerary.location} 
                                    Morning Plans: {itinerary.morn} 
-                                   Mid-Day Plans: {itinerary.noon} 
+                                   Noon Plans: {itinerary.noon} 
                                    Evening Plans: {itinerary.eve}
                                 </p>
                             </div>
@@ -34,7 +34,6 @@ const View = () => {
                 </div>
             )}
 
-            The view page.
 
 
             <Carousels />
