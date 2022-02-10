@@ -7,7 +7,7 @@
 // import Login from './pages/Login';
 // import View from './pages/View';
 // import Footer from './Footer';
-// import Contact from '../components/pages/Contact'
+// import  from '../components/pages/'
 
 // function Switcher() {
 //   const [currentPage, handlePageChange] = useState('Home');
@@ -23,8 +23,8 @@
 //         return <Signup />
 //       case 'Login':
 //         return <Login />
-//       case 'Contact':
-//         return <Contact />
+//       case '':
+//         return < />
 //       case 'View':
 //         return <View />
 //       default:
@@ -49,7 +49,7 @@ import React from 'react';
 import Schedule from './pages/Schedule';
 import View from './pages/View';
 import Homepage from './pages/Homepage';
-// import '../App.css';
+//import '../App.css';
 
 
 import Auth from '../utils/auth';

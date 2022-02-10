@@ -48,7 +48,7 @@ return (
             <Route exact path="/signup" element={<Signup/>} />
             <Route exact path="/schedule" element={<Schedule/>} />
             <Route exact path="/view" element={<View/>} />
-
+{/* Need a contact pathing, when I added a route to it, it broke the CSS */}
           </Routes>
         </div>
         <Footer />
