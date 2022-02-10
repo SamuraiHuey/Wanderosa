@@ -49,7 +49,7 @@ import React from 'react';
 import Schedule from './pages/Schedule';
 import View from './pages/View';
 import Homepage from './pages/Homepage';
-import Hero from './Hero'
+// import '../App.css';
 
 
 import Auth from '../utils/auth';
