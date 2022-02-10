@@ -57,9 +57,9 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ME, QUERY_ITINERARY } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_ITINERARY);
+  
   const { data: userData } = useQuery(QUERY_ME);
-  const itinerary = data?.itinerary || [];
+  
 
   const loggedIn = Auth.loggedIn();
 
@@ -82,8 +82,6 @@ const Home = () => {
         {loggedIn && userData ? (
           <div className="col-12 col-lg-3 mb-3">
             <View
-              username={userData.me.username}
-              itinerary={userData.me.itinerary}
             />
           </div>
         ) : null}
