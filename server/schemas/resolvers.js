@@ -32,6 +32,10 @@ const resolvers = {
         .populate('itinerary')
 
     },
+    itinerary: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Itinerary.find(params);
+    },
   },
 
   Mutation: {
