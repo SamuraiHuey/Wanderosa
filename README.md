@@ -7,7 +7,8 @@ Have you ever wanted to have one easy place to plan out your days on vacation? W
 Jump in and prepare to wander! Sign up for an account with our safe and secure system and get started creating itineraries. Under the `Schedule` tab you will be able to pick when your trip is as well as where you are going! from there you can add your plans for the morning, afternoon, and evening.
 Its that simple!
 
-// Will add photo of app here
+![image](https://user-images.githubusercontent.com/89109404/153527670-2fb3cac4-20c4-4e08-99f6-7e9ce9cad7c0.png)
+
 
 ## Plans for the future!
 Wanderosa is a great app on its own, but we still have plenty of ideas for the future!
