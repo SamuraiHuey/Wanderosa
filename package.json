@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/SamuraiHuey/Wanderosa#readme",
   "dependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0"
   },
   "engines": {
     "node": "14.x"

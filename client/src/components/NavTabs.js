@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 function NavTabs(props) {
-    const tabs = ['Home', 'Schedule', 'Signup'];
+    const tabs = ['Home', 'Schedule', 'View', 'Signup', 'Login', 'Contact'];
     return (
-        <div>
+        <div className='header-links'>
             <h1>Wanderosa!</h1>
             <ul className="nav nav-tabs">
                 {tabs.map(tab => (
@@ -24,4 +25,6 @@ function NavTabs(props) {
     );
 }
 
+
 export default NavTabs;
+
