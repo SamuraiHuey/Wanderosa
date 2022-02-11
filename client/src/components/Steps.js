@@ -7,8 +7,8 @@ const Steps = () => {
     return (
         <Row>
             <Col>
-                <Card style={{ width: '12rem' }}>
-                    <Card.Img style={{ width: '10rem' }} variant="top" src="https://cdn1.iconfinder.com/data/icons/ui-5/502/calendar-512.png" />
+                <Card style={{ width: '12rem', height: '21rem' }}>
+                    <Card.Img style={{ width: '12rem' }} variant="top" src="https://cdn1.iconfinder.com/data/icons/ui-5/502/calendar-512.png" />
                     <Card.Body>
                         <Card.Title>Pick a Date</Card.Title>
                         <Card.Text>
@@ -19,8 +19,8 @@ const Steps = () => {
             </Col>
 
             <Col>
-                <Card style={{ width: '12rem' }}>
-                    <Card.Img style={{ width: '10rem' }} variant="top" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/52-512.png" />
+                <Card style={{ width: '12rem', height: '21rem' }}>
+                    <Card.Img style={{ width: '12rem' }} variant="top" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/52-512.png" />
                     <Card.Body>
                         <Card.Title>Pick a Destination</Card.Title>
                         <Card.Text>
@@ -31,8 +31,8 @@ const Steps = () => {
             </Col>
 
             <Col>
-                <Card style={{ width: '12rem' }}>
-                    <Card.Img style={{ width: '10rem' }} variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-pencil_2.svg/2048px-Circle-icons-pencil_2.svg.png" />
+                <Card style={{ width: '12rem', height: '21rem' }}>
+                    <Card.Img style={{ width: '12rem' }} variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-pencil_2.svg/2048px-Circle-icons-pencil_2.svg.png" />
                     <Card.Body>
                         <Card.Title>Fill out your Itinerary</Card.Title>
                         <Card.Text>
@@ -43,8 +43,8 @@ const Steps = () => {
             </Col>
 
             <Col>
-                <Card style={{ width: '12rem' }}>
-                    <Card.Img style={{ width: '10rem' }} variant="top" src="https://icons.iconarchive.com/icons/martz90/circle-addon2/512/plane-flight-icon.png" />
+                <Card style={{ width: '12rem', height: '21rem' }}>
+                    <Card.Img style={{ width: '12rem' }} variant="top" src="https://icons.iconarchive.com/icons/martz90/circle-addon2/512/plane-flight-icon.png" />
                     <Card.Body>
                         <Card.Title>Travel</Card.Title>
                         <Card.Text>

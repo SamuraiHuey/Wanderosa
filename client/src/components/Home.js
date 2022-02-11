@@ -50,6 +50,8 @@ import Schedule from './pages/Schedule';
 import View from './pages/View';
 import Homepage from './pages/Homepage';
 //import '../App.css';
+import Hero from './Hero';
+import Cards from './Cards'
 
 
 import Auth from '../utils/auth';
@@ -57,9 +59,9 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ME, QUERY_ITINERARY } from '../utils/queries';
 
 const Home = () => {
-  
+
   const { data: userData } = useQuery(QUERY_ME);
-  
+
 
   const loggedIn = Auth.loggedIn();
 
@@ -67,10 +69,20 @@ const Home = () => {
     <main>
 
       <div>
-        <Homepage />
+        <div>
+
+          <div>
+            <Hero />
+          </div>
+
+          <div>
+            <Cards />
+          </div>
+
+        </div>
       </div>
 
-      <div className="flex-row justify-space-between">
+      {/* <div className="flex-row justify-space-between">
         {loggedIn && userData ? (
           <div className="col-12 mb-3">
             <Schedule />
@@ -85,7 +97,7 @@ const Home = () => {
             />
           </div>
         ) : null}
-      </div>
+      </div> */}
 
     </main>
   );
